@@ -1,0 +1,131 @@
+@import url('reset.css');
+
+html {
+	inline-size: 100%;
+	block-size: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: cadetblue;
+}
+
+body {
+	outline: solid;
+	inline-size: 30rem;
+	/* block-size: fit-content; */
+	block-size: 30rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: chocolate;
+}
+
+header {
+	/* outline: solid; */
+	background-color: cornflowerblue;
+}
+
+main {
+	/* outline: solid; */
+	inline-size: 100%;
+	block-size: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: cornflowerblue;
+}
+
+section.slider {
+	/* outline: solid; */
+	inline-size: 80%;
+	block-size: 80%;
+	background-color: darkcyan;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	align-items: center;
+	/* justify-items: center; */
+	justify-content: center;
+	overflow: hidden;
+}
+
+section.slider > .buttons {
+	/* outline: solid; */
+	inline-size: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* inline-size: 2rem; */
+}
+
+section.slider > .buttons > button {
+	z-index: 1;
+	inline-size: 2rem;
+	cursor: pointer;
+}
+
+section.slider .dots {
+	/* outline: solid; */
+	font-size: large;
+	line-height: 0;
+
+	position: absolute;
+	bottom: 1rem;
+	z-index: 1;
+	display: flex;
+	flex-direction: row;
+	/* column-gap: 2rem; */
+	/* align-content: flex-end; */
+}
+
+section.slider .dot {
+	/* outline: solid; */
+	cursor: pointer;
+	color: white;
+	font-size: 2rem;
+	/* color: gray; */
+}
+
+.slide {
+	/* outline: solid; */
+	inline-size: 100%;
+	block-size: 100%;
+
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* transition: transform 1s; */
+}
+
+div.slide:nth-child(1) {
+	/* background-color: sandybrown; */
+	background-image: url(images/pic1.jpg);
+	/* transform: translateX(0); */
+}
+
+div.slide:nth-child(2) {
+	/* background-color: darkgreen; */
+	background-image: url(images/pic2.jpg);
+	/* transform: translateX(100%); */
+}
+
+div.slide:nth-child(3) {
+	/* background-color: darkseagreen; */
+	background-image: url(images/pic3.jpg);
+	/* transform: translateX(200%); */
+}
+
+div.slide:nth-child(4) {
+	/* background-color: steelblue; */
+	background-image: url(images/pic4.jpg);
+	/* transform: translateX(300%); */
+}
+
+footer {
+	/* outline: solid; */
+	background-color: cornflowerblue;
+}
