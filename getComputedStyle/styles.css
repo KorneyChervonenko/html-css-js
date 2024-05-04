@@ -1,0 +1,6 @@
+#element {
+  outline-style: solid;
+  background-color: cadetblue;
+  max-inline-size: 10rem;
+  max-block-size: 5rem;
+}
